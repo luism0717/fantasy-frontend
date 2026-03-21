@@ -4,6 +4,7 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import Leagues from './pages/Leagues'
 import CreateLeague from './pages/CreateLeague'
+import LeagueDetail from './pages/LeagueDetail'
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/leagues" element={<Leagues />} />
         <Route path="/leagues/create" element={<CreateLeague />} />
-        <Route path="/leagues/:id" element={<Leagues />} />
+        <Route path="/leagues/:id" element={<LeagueDetail />} />
       </Routes>
     </BrowserRouter>
   )

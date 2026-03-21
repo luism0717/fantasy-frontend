@@ -20,7 +20,7 @@ function Dashboard() {
                 <div className="flex justify-between items-center mb-8">
                     <h2 className="text-2x1 font-bold">Leagues</h2>
                     <button
-                        onClick={() => navigate('/leagues/create')}
+                        onClick={() => navigate(`/leagues/create`)}
                         className="bg-green-500 hover:bg-green-400 text-black font-bold px-4 py-2 rounded transition"
                     >
                         + Create League
@@ -34,7 +34,7 @@ function Dashboard() {
                         {leagues.map(league => (
                             <div
                                 key={league.id}
-                                onClick={() => navigate('/leagues/${league.id}')}
+                                onClick={() => navigate(`/leagues/${league.id}`)}
                                 className="bg-gray-800 p-6 rounded-lg cursor-pointer hover:bg-gray-700 transition"
                             >
                                 <h3 className='text-xl font-bold text-green-400'>{league.name}</h3>
