@@ -18,10 +18,16 @@ function Dashboard() {
             <Navbar />
             <div className="p-8">
                 <div className="flex justify-between items-center mb-8">
-                    <h2 className="text-2x1 font-bold">Leagues</h2>
+                    <h2 className="text-2xl font-bold">Leagues</h2>
+                    <button
+                        onClick={() => navigate(`/leagues/join`)}
+                        className='bg-gray-700 hover:bg-gray-600 text-white font-bold px-4 py-2 rounded transition'
+                    >
+                        + Join League
+                    </button>
                     <button
                         onClick={() => navigate(`/leagues/create`)}
-                        className="bg-green-500 hover:bg-green-400 text-black font-bold px-4 py-2 rounded transition"
+                        className='bg-green-500 hover:bg-green-400 text-black font-bold px-4 py-2 rounded transition'
                     >
                         + Create League
                     </button>

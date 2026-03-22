@@ -5,6 +5,8 @@ import Register from './pages/Register'
 import Leagues from './pages/Leagues'
 import CreateLeague from './pages/CreateLeague'
 import LeagueDetail from './pages/LeagueDetail'
+import Players from './pages/Players'
+import JoinLeague from './pages/JoinLeague'
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/leagues" element={<Leagues />} />
         <Route path="/leagues/create" element={<CreateLeague />} />
+        <Route path="/leagues/join" element={<JoinLeague />} />
         <Route path="/leagues/:id" element={<LeagueDetail />} />
+        <Route path="/players" element={<Players />} />
       </Routes>
     </BrowserRouter>
   )
