@@ -1,15 +1,15 @@
 function Navbar() {
     const handleLogout = () => {
         localStorage.removeItem('token')
-        window.location.href = '/auth/login'
+        window.location.href = '/login'
     }
 
     return (
         <nav className='bg-gray-800 p-4 flex justify-between items-center'>
             <h1 className='text-3xl font-bold text-green-400 items-left justify-top'>Fantasy Sports</h1>
-            <button onClick={handleLogout}>Logout</button>
-            <button onClick={handleLogout}>Join League</button>
+            <a href="/leagues/join" className='text-gray-400 hover:text-white transition'>Join League</a>
             <a href="/players" className='text-gray-400 hover:text-white transition'>Players</a>
+            <button onClick={handleLogout}>Logout</button>
         </nav>
     )
 }

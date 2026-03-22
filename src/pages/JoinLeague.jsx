@@ -3,8 +3,8 @@ import client  from "../api/client";
 import Navbar from "../components/Navbar";
 
 function JoinLeague() {
-    const [team_name, setTeamName] = useState ('')
-    const [invite_code, setInviteCode] = useState ('')
+    const [team_name, setTeamName] = useState('')
+    const [invite_code, setInviteCode] = useState('')
     const [error, setError] = useState('')
 
     const handleSubmit = async (e) => {

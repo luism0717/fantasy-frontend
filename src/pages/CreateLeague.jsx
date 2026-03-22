@@ -3,9 +3,9 @@ import client from '../api/client'
 import Navbar from '../components/Navbar'
 
 function CreateLeague() {
-    const [name, setName] = useState ('')
-    const [sport, setSport] = useState ('')
-    const [max_teams, setMaxTeams] = useState ('')
+    const [name, setName] = useState('')
+    const [sport, setSport] = useState('')
+    const [max_teams, setMaxTeams] = useState('')
     const [error, setError] = useState('')
 
     const handleSubmit = async (e) => {

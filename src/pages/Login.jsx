@@ -2,8 +2,8 @@ import { useState } from 'react'
 import client from '../api/client'
 
 function Login() {
-    const [username, setUsername] = useState ('')
-    const [password, setPassword] = useState ('')
+    const [username, setUsername] = useState('')
+    const [password, setPassword] = useState('')
     const [error, setError] = useState('')
 
     const handleLogin = async (e) => {
@@ -22,7 +22,7 @@ function Login() {
     return (
         <div className='bg-gray-900 min-h-screen flex items-center justify-center'>
             <div className='bg-gray-800 p-8 rounded-lg w-full max-w-md'>
-                <h1 className='text-3x1 font-bold text-green-400 mb-2'>Fantasy Sports</h1>
+                <h1 className='text-3xl font-bold text-green-400 mb-2'>Fantasy Sports</h1>
                 <p className='text-gray-400 mb-8'>Sign in to your account</p>
 
                 {error && (
@@ -38,7 +38,7 @@ function Login() {
                             type='text'
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
-                            className='w-full bg-gray-700 text-white p-3 rounded focus:outline-non focus:ring-2 focus:ring-green-400'
+                            className='w-full bg-gray-700 text-white p-3 rounded focus:outline-none focus:ring-2 focus:ring-green-400'
                             placeholder='Enter username'
                         />
                     </div>

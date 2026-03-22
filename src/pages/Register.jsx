@@ -2,10 +2,10 @@ import { useState } from 'react'
 import client from '../api/client'
 
 function Register() {
-    const [username, setUsername] = useState ('')
-    const [password, setPassword] = useState ('')
-    const [email, setEmail] = useState ('')
-    const [error, setError] = useState ('')
+    const [username, setUsername] = useState('')
+    const [password, setPassword] = useState('')
+    const [email, setEmail] = useState('')
+    const [error, setError] = useState('')
 
     const handleRegister = async (e) => {
         e.preventDefault()
@@ -20,7 +20,7 @@ function Register() {
     return (
         <div className='bg-gray-900 min-h-screen flex items-center justify-center'>
             <div className='bg-gray-800 p-8 rounded-lg w-full max-w-md'>
-                <h1 className='text-3x1 font-bold text-green-400 mb-2'>Fantasy Sports</h1>
+                <h1 className='text-3xl font-bold text-green-400 mb-2'>Fantasy Sports</h1>
                 <p className='text-gray-400 mb-8'>Sign up to an account</p>
 
                 {error && (
@@ -36,7 +36,7 @@ function Register() {
                             type='text'
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
-                            className='w-full bg-gray-700 text-white p-3 rounded focus:outline-non focus:ring-2 focus:ring-green-400'
+                            className='w-full bg-gray-700 text-white p-3 rounded focus:outline-none focus:ring-2 focus:ring-green-400'
                             placeholder='Enter username'
                         />
                     </div>
@@ -47,7 +47,7 @@ function Register() {
                             type='password'
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
-                            className='w-full bg-gray-700 text-white p-3 rounded focus:outline-non focus:ring-2 focus:ring-green-400'
+                            className='w-full bg-gray-700 text-white p-3 rounded focus:outline-none focus:ring-2 focus:ring-green-400'
                             placeholder='Enter password'
                         />
                     </div>
@@ -55,10 +55,10 @@ function Register() {
                     <div className='mb-8'>
                         <label className='block text-gray-400 mb-2'>Email</label>
                         <input
-                            type='text'
+                            type='email'
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            className='w-full bg-gray-700 text-white p-3 rounded focus:outline-non focus:ring-2 focus:ring-green-400'
+                            className='w-full bg-gray-700 text-white p-3 rounded focus:outline-none focus:ring-2 focus:ring-green-400'
                             placeholder='Enter email'
                         />
                     </div>
@@ -72,8 +72,8 @@ function Register() {
                 </form>
 
                 <p className='text-gray-400 mt-4 text-center'>
-                    Not valid credentials?{' '}
-                    <a href='/register' className='text-green-400 hover:underline'>Register</a>
+                    Already have an account?{' '}
+                    <a href='/login' className='text-green-400 hover:underline'>Sign In</a>
                 </p>
             </div>
         </div>

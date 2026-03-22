@@ -4,7 +4,7 @@ import client  from "../api/client";
 import Navbar from '../components/Navbar'
 
 function LeagueDetail() {
-    const { id } = useParams ()
+    const { id } = useParams()
     const [league, setLeague] = useState(null)
 
     useEffect(() => {
